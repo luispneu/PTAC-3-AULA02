@@ -1,5 +1,5 @@
 export default async function Home() {
-  const respostas = await fetch("http://localhost:3000/api",{
+  const respostas = await fetch("https://back-end-ifms-rho.vercel.app/campi",{
     next:{
       revalidate: 1
     }
@@ -10,8 +10,8 @@ export default async function Home() {
       <h1>Home!!</h1>
       {campus.map((campi) => (
         <div>
-          <p>{campi.nome_campi}</p>
-      <img src="campi.imagem_url"></img>
+          <p>{campi.nome_campus}</p>
+      <img src="campus.image_url"></img>
         </div>
       ))}
     </main>
