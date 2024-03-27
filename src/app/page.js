@@ -11,11 +11,15 @@ export default async function Home() {
     <main>
       <h1>Home!!</h1>
       {campus.map((campi) => (
-        <div  
-          key={campi.id}
-          imagemUrl={campi.Image_url}
-          nomecampus={campi.nome_campus  }
-       />
+        <div key={campi.id}>
+          <Image
+            src={campi.image_url}
+            alt={`Imagem do campus ${campi.nome_campus}`}
+            width={500}
+            height={300}
+          />
+          <p>{campi.nome_campus}</p>
+        </div>
       ))}
     </main>
   );

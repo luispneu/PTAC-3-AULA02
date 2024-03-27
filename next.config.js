@@ -2,8 +2,8 @@
 const nextConfig = {images: {
     domains:[
         "www.ifms.edu.br",
-        "www.google.com/"
-        
+        "www.google.com/",
+        "//back-end-ifms-rho.vercel.app/campi"
     ]
 }}
 
